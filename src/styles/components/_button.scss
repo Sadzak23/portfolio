@@ -1,0 +1,36 @@
+.button {
+  background-color: var(--primary);
+  border-radius: 16px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--background);
+  padding: 0 3rem;
+  border: none;
+  height: 3rem;
+  cursor: pointer;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  &:disabled {
+    opacity: 0.5;
+    cursor: wait;
+  }
+  &:not(:disabled) {
+    &:hover {
+      background-color: var(--primaryAlt);
+      box-shadow:
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        0 0 30px rgba(231, 179, 31, 0.4);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+a {
+  user-select: none;
+  -webkit-user-drag: none;
+}

@@ -1,7 +1,9 @@
 @use "./variables";
 @use "./globals";
 
+@use "./common/animations";
 @use "./common/typography";
 
 @use "./components/button";
+@use "./components/hero";
 @use "./components/themeToggle";

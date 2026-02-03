@@ -2,8 +2,8 @@
   // Colors
   --primary: #e7b31f;
   --primaryAlt: #c69b20;
-  --background: #ffffff;
-  --text-gray: #999;
+  --background: #fff;
+  --text-gray: #ddd;
   --foreground: #333;
   --foregroundAlt: #a3a3a3;
   --border: #c5c5c5;
@@ -15,12 +15,14 @@
 
 html.dark {
   // Colors
-  --background: #333;
+  --background: #0d0d0d;
+  --backgroundAlt: #151515;
   --foreground: #ededed;
-  --foregroundAlt: #555555;
+  --foregroundAlt: #555;
+  --text-gray: #999;
   --border: #747474;
   // RGB Values
-  --backgroundRGB: 51, 51, 51;
+  --backgroundRGB: 13, 13, 13;
   --foregroundRGB: 237, 237, 237;
 }
 

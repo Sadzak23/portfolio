@@ -1,0 +1,31 @@
+:root {
+  // Colors
+  --primary: #e7b31f;
+  --primaryAlt: #c69b20;
+  --background: #ffffff;
+  --text-gray: #999;
+  --foreground: #333;
+  --foregroundAlt: #a3a3a3;
+  --border: #c5c5c5;
+  // RGB Values
+  --primaryRGB: 231, 179, 31;
+  --backgroundRGB: 255, 255, 255;
+  --foregroundRGB: 51, 51, 51;
+}
+
+html.dark {
+  // Colors
+  --background: #333;
+  --foreground: #ededed;
+  --foregroundAlt: #555555;
+  --border: #747474;
+  // RGB Values
+  --backgroundRGB: 51, 51, 51;
+  --foregroundRGB: 237, 237, 237;
+}
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;

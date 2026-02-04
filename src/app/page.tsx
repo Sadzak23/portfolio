@@ -1,4 +1,5 @@
 import { About } from "@/components/about/About";
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/hero/Hero";
 import { ThemeBtn } from "@/components/ThemeBtn";
 
@@ -9,6 +10,7 @@ const Home = () => (
       <Hero />
       <About />
     </main>
+    <Footer />
   </div>
 );
 

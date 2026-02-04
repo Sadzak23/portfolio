@@ -24,3 +24,21 @@
     @content;
   }
 }
+
+// Card
+@mixin glass-card {
+  background: var(--backgroundAlt);
+  border: 1px solid var(--glass-border);
+}
+
+@mixin glass-card-hover {
+  @include glass-card;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--glass-hover);
+    border-color: rgba(var(--primaryRGB), 0.3);
+    box-shadow: 0 0 15px rgba(var(--primaryRGB), 0.15);
+    transform: translateY(-4px) scale(1.02) !important;
+  }
+}

@@ -13,17 +13,49 @@ a {
 }
 
 h1 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
   line-height: 1.1;
+  @include md {
+    font-size: 6rem;
+  }
+  @include lg {
+    font-size: 8rem;
+  }
 }
-// h2 {
-//   font-size: 1.5rem;
-//   font-weight: 400;
-// }
-// h3 {
-//   font-size: 1.25rem;
-//   font-weight: 400;
-// }
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.05em;
+  color: var(--foreground);
+  font-size: 2.5rem;
+  @include sm {
+    font-size: 3rem;
+  }
+  @include md {
+    font-size: 3.75rem;
+  }
+}
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: var(--foreground);
+
+  @include sm {
+    font-size: 1.875rem;
+  }
+}
+
+.pre-headline {
+  letter-spacing: 0.3em;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
 
 a {
   color: inherit;
@@ -38,22 +70,4 @@ a {
 }
 .bold {
   font-weight: bold;
-}
-
-@include md {
-  h1 {
-    font-size: 4.5rem;
-  }
-}
-
-@include lg {
-  h1 {
-    font-size: 8rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
 }

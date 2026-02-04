@@ -1,3 +1,5 @@
+@use "@/styles/mixins" as *;
+
 .hero-section {
   position: relative;
   height: 100dvh;
@@ -30,17 +32,26 @@
       flex-direction: column;
       gap: 16px;
       .intro {
-        font-size: 1.2rem;
-        letter-spacing: 4px;
+        font-size: 1rem;
+        letter-spacing: 0.25em;
         text-shadow:
           -1px -1px 0 #333,
           1px -1px 0 #333,
           -1px 1px 0 #333,
           1px 1px 0 #333;
+        @include md {
+          font-size: 1.2rem;
+        }
       }
       .desc {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: var(--text-gray);
+        @include md {
+          font-size: 1.2rem;
+        }
+        @include lg {
+          font-size: 1.5rem;
+        }
       }
     }
   }

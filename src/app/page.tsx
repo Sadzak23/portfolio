@@ -1,4 +1,5 @@
-import { Hero } from "@/components/Hero/Hero";
+import { About } from "@/components/about/About";
+import { Hero } from "@/components/hero/Hero";
 import { ThemeBtn } from "@/components/ThemeBtn";
 
 const Home = () => (
@@ -6,6 +7,7 @@ const Home = () => (
     <ThemeBtn />
     <main>
       <Hero />
+      <About />
     </main>
   </div>
 );

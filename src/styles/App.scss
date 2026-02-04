@@ -5,5 +5,7 @@
 @use "./common/typography";
 
 @use "./components/button";
-@use "./components/hero";
 @use "./components/themeToggle";
+
+@use "./sections/hero";
+@use "./sections/about";

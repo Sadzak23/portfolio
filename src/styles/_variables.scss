@@ -3,6 +3,7 @@
   --primary: #e7b31f;
   --primaryAlt: #c69b20;
   --background: #fff;
+  --backgroundAlt: #eee;
   --text-gray: #ddd;
   --foreground: #333;
   --foregroundAlt: #a3a3a3;
@@ -11,6 +12,10 @@
   --primaryRGB: 231, 179, 31;
   --backgroundRGB: 255, 255, 255;
   --foregroundRGB: 51, 51, 51;
+  // Glass
+  --glass-bg: rgba(0, 0, 0, 0.03);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-hover: rgba(0, 0, 0, 0.06);
 }
 
 html.dark {
@@ -24,6 +29,10 @@ html.dark {
   // RGB Values
   --backgroundRGB: 13, 13, 13;
   --foregroundRGB: 237, 237, 237;
+  // Glass
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-hover: rgba(255, 255, 255, 0.06);
 }
 
 // Breakpoints

@@ -16,7 +16,6 @@
     transition: all 300ms ease;
     background: rgba(var(--foregroundRGB), 0.05);
     border: 2px solid rgba(var(--foregroundRGB), 0.1);
-    backdrop-filter: blur(20px);
     &:hover {
       border-color: rgba(var(--primaryRGB), 0.3);
       box-shadow: 0 0 15px rgba(var(--primaryRGB), 0.15);

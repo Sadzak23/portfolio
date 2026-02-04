@@ -1,5 +1,5 @@
 import heroImage from "@/assets/img/hero-portrait.jpg";
-import { HeroContent } from "@/components/Hero/HeroContent";
+import { HeroContent } from "@/components/hero/HeroContent";
 import Image from "next/image";
 
 export const Hero = () => (

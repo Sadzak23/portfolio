@@ -6,7 +6,10 @@
 
 @use "./components/button";
 @use "./components/footer";
+@use "./components/header";
+@use "./components/section";
 @use "./components/themeToggle";
 
 @use "./sections/about";
 @use "./sections/hero";
+@use "./sections/projects";

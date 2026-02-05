@@ -1,11 +1,12 @@
 @use "@/styles/mixins" as *;
+@use "@/styles/variables" as *;
 
 .hero-section {
   position: relative;
   height: 100dvh;
   width: 100%;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all $transition-base;
   .hero-img {
     height: 100%;
     width: 100%;
@@ -30,6 +31,7 @@
     .content {
       display: flex;
       flex-direction: column;
+      padding: 1rem;
       gap: 16px;
       .intro {
         font-size: 1rem;

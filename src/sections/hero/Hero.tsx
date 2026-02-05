@@ -1,5 +1,5 @@
-import heroImage from "@/assets/img/hero-portrait.jpg";
-import { HeroContent } from "@/components/hero/HeroContent";
+import heroImage from "@/assets/img/hero-portrait.webp";
+import { HeroContent } from "@/sections/hero/HeroContent";
 import Image from "next/image";
 
 export const Hero = () => (

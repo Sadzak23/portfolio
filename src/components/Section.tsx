@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const Section: FC<Props> = ({ id, children, ...rest }) => (
-  <section id={id}>
+  <section id={id} className="section">
     <SectionHeader {...rest} />
     {children}
   </section>

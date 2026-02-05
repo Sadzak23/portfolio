@@ -6,8 +6,8 @@
   --backgroundAlt: #eee;
   --text-gray: #ddd;
   --foreground: #333;
-  --foregroundAlt: #a3a3a3;
-  --border: #c5c5c5;
+  --foregroundAlt: #666666;
+  --border-color: #c5c5c5;
   // RGB Values
   --primaryRGB: 231, 179, 31;
   --backgroundRGB: 255, 255, 255;
@@ -16,6 +16,8 @@
   --glass-bg: rgba(0, 0, 0, 0.03);
   --glass-border: rgba(0, 0, 0, 0.08);
   --glass-hover: rgba(0, 0, 0, 0.06);
+
+  --border: 1px solid var(--border-color);
 }
 
 html.dark {
@@ -23,9 +25,9 @@ html.dark {
   --background: #0d0d0d;
   --backgroundAlt: #151515;
   --foreground: #ededed;
-  --foregroundAlt: #555;
+  --foregroundAlt: #999999;
   --text-gray: #999;
-  --border: #747474;
+  --border-color: #747474;
   // RGB Values
   --backgroundRGB: 13, 13, 13;
   --foregroundRGB: 237, 237, 237;
@@ -33,6 +35,8 @@ html.dark {
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-hover: rgba(255, 255, 255, 0.06);
+
+  --border: 1px solid var(--border-color);
 }
 
 // Breakpoints
@@ -40,3 +44,14 @@ $breakpoint-sm: 640px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1280px;
+
+// Typography
+$font-heading: "Bebas Neue", sans-serif;
+$font-body: "Poppins", sans-serif;
+
+// Border Radius
+// $radius-sm: 0.5rem;
+$radius-md: 0.75rem;
+$radius-lg: 1rem;
+$radius-xl: 1.5rem;
+$radius-full: 9999px;

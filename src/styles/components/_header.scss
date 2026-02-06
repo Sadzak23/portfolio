@@ -64,9 +64,9 @@
   }
 
   &__link {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 500;
-    color: var(--foregroundAlt);
+    color: var(--foreground);
     transition: color $transition-base;
     @include primary-underline;
 

@@ -1,14 +1,11 @@
 @use "@/styles/mixins" as *;
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 80px;
   border-top: var(--border);
   p {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   @include md {
     p {

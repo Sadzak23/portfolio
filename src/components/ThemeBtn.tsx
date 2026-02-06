@@ -25,6 +25,7 @@ export const ThemeBtn: FC = () => {
       className="toggle-btn"
     >
       <button
+        className="flex center"
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         aria-label="Toggle theme"
       >

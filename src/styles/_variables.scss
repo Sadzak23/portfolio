@@ -2,15 +2,15 @@
   // Colors
   --primary: #e7b31f;
   --primaryAlt: #c69b20;
-  --background: #fff;
-  --backgroundAlt: #eee;
+  --background: rgb(245, 245, 245);
+  --backgroundAlt: #fafafa;
   --text-gray: #ddd;
   --foreground: #333;
   --foregroundAlt: #666666;
   --border-color: #c5c5c5;
   // RGB Values
   --primaryRGB: 231, 179, 31;
-  --backgroundRGB: 255, 255, 255;
+  --backgroundRGB: 245, 245, 245;
   --foregroundRGB: 51, 51, 51;
   // Glass
   --glass-bg: rgba(0, 0, 0, 0.03);
@@ -23,7 +23,8 @@
 html.dark {
   // Colors
   --background: #0d0d0d;
-  --backgroundAlt: #151515;
+  --backgroundAlt: #121212;
+  --backgroundAlt2: #1f1f1f;
   --foreground: #ededed;
   --foregroundAlt: #999999;
   --text-gray: #999;
@@ -53,7 +54,7 @@ $font-heading: "Bebas Neue", sans-serif;
 $font-body: "Poppins", sans-serif;
 
 // Border Radius
-// $radius-sm: 0.5rem;
+$radius-sm: 0.5rem;
 $radius-md: 0.75rem;
 $radius-lg: 1rem;
 $radius-xl: 1.5rem;

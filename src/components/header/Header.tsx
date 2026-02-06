@@ -4,6 +4,7 @@ import { useState, useEffect, type FC } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import { scrollToId } from "@/utils/baseUtils";
+import { cv } from "@/data/documents";
 
 export const Header: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,10 +61,10 @@ export const Header: FC = () => {
           {/* Actions */}
           <div className="nav__actions">
             <a
-              href="/cv.pdf"
+              href={cv}
               download
-              className="nav__cv-btn"
               aria-label="Download CV"
+              className="nav__cv-btn"
             >
               <Download />
               <span>CV</span>
@@ -110,7 +111,7 @@ export const Header: FC = () => {
               </motion.button>
             ))}
 
-            <a href="/cv.pdf" download className="nav__mobile-cv">
+            <a href={cv} download className="nav__mobile-cv">
               <Download />
               Download CV
             </a>

@@ -1,24 +1,26 @@
+@use "@/styles/mixins" as *;
 @use "@/styles/variables" as *;
 
 button {
   appearance: none;
   border: none;
+  background: none;
   font-family: $font-body;
+  cursor: pointer;
 }
 
 .button {
   background-color: var(--primary);
   border-radius: $radius-lg;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
   color: #333;
   padding: 0 3rem;
   border: none;
   height: 3rem;
-  cursor: pointer;
   text-wrap: nowrap;
   text-transform: uppercase;
-  transition: background-color 0.3s ease;
+  transition: background-color $transition-base;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   &:disabled {
     opacity: 0.5;
@@ -29,15 +31,13 @@ button {
       background-color: var(--primaryAlt);
       box-shadow:
         rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        0 0 30px rgba(231, 179, 31, 0.4);
+        0 0 30px rgba(var(--primaryRGB), 0.4);
     }
     &:active {
       transform: translateY(2px);
     }
   }
-}
-
-a {
-  user-select: none;
-  -webkit-user-drag: none;
+  @include sm {
+    font-size: 1.125rem;
+  }
 }

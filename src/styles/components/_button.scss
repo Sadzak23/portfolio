@@ -10,34 +10,72 @@ button {
 }
 
 .button {
-  background-color: var(--primary);
-  border-radius: $radius-lg;
-  font-size: 1rem;
+  border: 1px solid var(--primary);
   font-weight: 600;
-  color: #333;
-  padding: 0 3rem;
-  border: none;
-  height: 3rem;
   text-wrap: nowrap;
   text-transform: uppercase;
-  transition: background-color $transition-base;
+  transition: all $transition-base;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  &:disabled {
-    opacity: 0.5;
-    cursor: wait;
+  width: fit-content;
+  // Size
+  &.s {
+    font-size: 0.875rem;
+    padding: 0 1rem;
+    height: 2.5rem;
+    border-radius: $radius-md;
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  &.m {
+    height: 3rem;
+    font-size: 1rem;
+    padding: 0 3rem;
+    border-radius: $radius-lg;
+    svg {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    @include sm {
+      svg {
+        width: 1.4rem;
+        height: 1.4rem;
+      }
+      font-size: 1.125rem;
+    }
+  }
+  &.full-width {
+    width: 100%;
+  }
+  // Variant styles
+  &.solid {
+    background-color: var(--primary);
+    color: #333;
+  }
+  &.outlined {
+    color: var(--primary);
   }
   &:not(:disabled) {
     &:hover {
-      background-color: var(--primaryAlt);
-      box-shadow:
-        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-        0 0 30px rgba(var(--primaryRGB), 0.4);
+      // transform: scale(1.05);
+      &.solid {
+        background-color: var(--primaryAlt);
+        box-shadow:
+          0px 0px 0px 0px rgba(0, 0, 0, 0),
+          0 0 30px rgba(var(--primaryRGB), 0.4);
+      }
+      &.outlined {
+        background-color: rgba(var(--primaryRGB), 0.1);
+        box-shadow: 0px 0px 20px rgba(var(--primaryRGB), 0.2);
+      }
     }
     &:active {
       transform: translateY(2px);
     }
   }
-  @include sm {
-    font-size: 1.125rem;
+  &:disabled {
+    opacity: 0.5;
+    cursor: wait;
   }
 }

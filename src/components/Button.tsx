@@ -1,26 +1,34 @@
-import type { FC, ReactNode } from "react";
+import type { LucideIcon } from "lucide-react";
+import type { FC } from "react";
 
 interface Props {
-  label?: string;
+  label: string;
+  icon?: LucideIcon;
   onClick?: () => void;
+  variant?: "solid" | "outlined";
+  size?: "s" | "m";
   disabled?: boolean;
   type?: HTMLButtonElement["type"];
-  children?: ReactNode;
+  fullWidth?: boolean;
 }
 
 export const Button: FC<Props> = ({
   label,
+  icon: Icon,
   onClick,
+  variant = "solid",
+  size = "m",
   disabled,
   type,
-  children,
+  fullWidth,
 }) => (
   <button
-    className="button flex center gap-2"
+    className={`button flex center gap-2 ${variant} ${size}${fullWidth ? " full-width" : ""}`}
     onClick={onClick}
     disabled={disabled}
     type={type}
   >
-    {children ?? label}
+    {label}
+    {Icon && <Icon />}
   </button>
 );

@@ -90,16 +90,13 @@ export const ContactContent: FC = () => {
             value={formData.message}
             onChange={handleChange}
           />
-          <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? (
-              "Sending..."
-            ) : (
-              <>
-                Send Message
-                <Send />
-              </>
-            )}
-          </Button>
+          <Button
+            label={isSubmitting ? "Sending..." : "Send Message"}
+            icon={Send}
+            type="submit"
+            disabled={isSubmitting}
+            fullWidth
+          />
         </form>
       </motion.div>
 

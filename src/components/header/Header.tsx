@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Download } from "lucide-react";
 import { scrollToId } from "@/utils/baseUtils";
 import { cv } from "@/data/documents";
+import { Button } from "@/components/Button";
 
 export const Header: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,8 +67,13 @@ export const Header: FC = () => {
               aria-label="Download CV"
               className="nav__cv-btn"
             >
-              <Download />
-              <span>CV</span>
+              <Button
+                label="CV"
+                icon={Download}
+                variant="outlined"
+                size="s"
+                type="button"
+              />
             </a>
             <button
               className="nav__mobile-toggle"
@@ -111,9 +117,8 @@ export const Header: FC = () => {
               </motion.button>
             ))}
 
-            <a href={cv} download className="nav__mobile-cv">
-              <Download />
-              Download CV
+            <a href={cv} download>
+              <Button label="Download CV" icon={Download} />
             </a>
           </motion.div>
         )}

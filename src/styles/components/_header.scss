@@ -50,6 +50,7 @@
       color: #333;
       font-weight: 700;
       font-size: 1rem;
+      padding-left: 3px;
     }
   }
 
@@ -83,29 +84,8 @@
 
   &__cv-btn {
     display: none;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: $radius-md;
-    border: 1px solid var(--primary);
-    color: var(--primary);
-    font-size: 0.875rem;
-    font-weight: 600;
-    transition: all $transition-base;
-
     @include md {
       display: flex;
-    }
-
-    &:hover {
-      background: var(--primary);
-      color: #333;
-      box-shadow: 0 0 15px rgba(var(--primaryRGB), 0.15);
-    }
-
-    svg {
-      width: 1rem;
-      height: 1rem;
     }
   }
 

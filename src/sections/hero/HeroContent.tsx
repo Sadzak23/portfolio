@@ -70,7 +70,7 @@ export const HeroContent: FC = () => (
     >
       <button
         onClick={() => scrollToId("about")}
-        className="scroll-content"
+        className="scroll-content flex column center gap-2"
         aria-label="Scroll to next section"
       >
         <span>SCROLL</span>

@@ -1,6 +1,9 @@
 @use "./variables";
 @use "./globals";
 
+@use "./helper/flexbox";
+@use "./helper/spacing";
+
 @use "./common/animations";
 @use "./common/typography";
 

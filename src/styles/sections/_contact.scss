@@ -1,0 +1,43 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.contact {
+  &__container {
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 3rem;
+
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__info-card {
+    @include glass-card;
+    border-radius: $radius-xl;
+    padding: 2rem;
+  }
+
+  &__info-title {
+    margin-bottom: 1rem;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    color: var(--foreground);
+  }
+
+  &__info-text {
+    margin-bottom: 1.5rem;
+    color: var(--foregroundAlt);
+  }
+}

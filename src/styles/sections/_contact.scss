@@ -2,12 +2,9 @@
 @use "@/styles/mixins" as *;
 
 .contact {
-  &__container {
+  &__content {
     max-width: 56rem;
     margin: 0 auto;
-  }
-
-  &__grid {
     display: grid;
     gap: 3rem;
 

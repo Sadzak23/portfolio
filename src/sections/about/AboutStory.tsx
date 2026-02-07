@@ -1,36 +1,37 @@
 "use client";
 
-import type { FC } from "react";
+import { useState, type FC } from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/Button";
+import { ArrowRight } from "lucide-react";
+import { AboutModal } from "@/sections/about/AboutModal";
+import { storyShort } from "@/data/story";
 
-export const AboutStory: FC = () => (
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.6, delay: 0.2 }}
-    className="about__story"
-  >
-    <div className="about__story-card">
-      <h3 className="about__story-title">THE PIVOT</h3>
-      <p className="about__story-text">
-        My journey began at DIF (Sports University), where I trained as a
-        professional athlete. The discipline, resilience, and competitive drive
-        I developed on the field became the foundation for everything that
-        followed.
-      </p>
-      <p className="about__story-text">
-        When COVID hit in 2020, the world paused, but I pivoted. What started as
-        curiosity about how digital products work evolved into an obsession with
-        React and frontend architecture. Late nights became coding sessions,
-        athletic training became technical training.
-      </p>
-      <p className="about__story-text">
-        Today, I lead frontend teams, architecting high-performance applications
-        and mentoring the next generation of developers. The athlete's
-        mindset—constant improvement, teamwork, performing under
-        pressure—translates perfectly to engineering leadership.
-      </p>
-    </div>
-  </motion.div>
-);
+export const AboutStory: FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="story"
+      >
+        <div className="story__card flex column gap-4">
+          <h4 className="c-primary">THE PIVOT</h4>
+          <p>{storyShort}</p>
+          <Button
+            label="Get to know me"
+            icon={ArrowRight}
+            onClick={() => setIsOpen(true)}
+            variant="outlined"
+            size="s"
+          />
+        </div>
+      </motion.div>
+      <AboutModal isOpen={isOpen} setIsOpen={setIsOpen} />
+    </>
+  );
+};

@@ -1,0 +1,88 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.story-modal {
+  h4 {
+    margin-bottom: 1rem;
+  }
+  &__subtitle {
+    margin-bottom: 0.75rem;
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: var(--foreground);
+    margin-bottom: 1.5rem;
+
+    @include sm {
+      font-size: 1.0625rem;
+    }
+
+    &--highlight {
+      position: relative;
+      padding: 0.5rem 1.5rem;
+      background: rgba(var(--primary), 0.05);
+      border-left: 3px solid var(--primary);
+      border-radius: 0 $radius-lg $radius-lg 0;
+      font-style: italic;
+    }
+  }
+
+  &__image {
+    cursor: pointer;
+    aspect-ratio: 4/3;
+    border-radius: $radius-lg;
+    transition: all $transition-base;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+    &:hover {
+      box-shadow: 0 0 20px rgba(var(--primaryRGB), 0.3);
+    }
+    &.square {
+      aspect-ratio: 1;
+    }
+    @include sm {
+      &.img-left {
+        float: left;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+        // height: auto;
+        width: 40%;
+      }
+      &.img-right {
+        float: right;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+        width: 40%;
+      }
+    }
+
+    &--small {
+      aspect-ratio: 1;
+    }
+  }
+
+  &__image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+}
+
+.images-container {
+  width: 100%;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  &.grid-1 img {
+    width: 100%;
+  }
+  &.grid-2 img {
+    width: calc(50% - 1rem / 2);
+  }
+  &.grid-3 img {
+    width: calc(33% - 1rem / 3);
+  }
+}

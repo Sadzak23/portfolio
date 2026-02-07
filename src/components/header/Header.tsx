@@ -6,6 +6,7 @@ import { Menu, X, Download } from "lucide-react";
 import { scrollToId } from "@/utils/baseUtils";
 import { cv } from "@/data/documents";
 import { Button } from "@/components/Button";
+import Image from "next/image";
 
 export const Header: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,7 +43,7 @@ export const Header: FC = () => {
         <div className="nav__container">
           {/* Logo */}
           <button className="nav__logo" onClick={() => scrollToId("hero")}>
-            <span className="nav__logo-icon">{`{AS}`}</span>
+            <Image src="/logo.svg" alt="Logo" width={60} height={40} />
             ALEKSANDAR
           </button>
 

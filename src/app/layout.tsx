@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   ],
   description:
     "Sadzak Aleksandar's portfolio showcasing web development skills and projects.",
+  icons: "/logo.svg",
   authors: [
     {
       name: "Sadzak Aleksandar",

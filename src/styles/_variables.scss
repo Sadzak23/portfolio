@@ -1,13 +1,14 @@
 :root {
   // Colors
-  --primary: #e7b31f;
-  --primaryAlt: #c69b20;
+  --primary: #de9f00;
+  --primaryAlt: #ce970c;
   --background: rgb(245, 245, 245);
   --backgroundAlt: #fafafa;
   --text-gray: #ddd;
   --foreground: #333;
   --foregroundAlt: #666666;
   --border-color: #c5c5c5;
+  --border-color-light: #e0e0e0;
   // RGB Values
   --primaryRGB: 231, 179, 31;
   --backgroundRGB: 245, 245, 245;
@@ -18,10 +19,13 @@
   --glass-hover: rgba(0, 0, 0, 0.06);
 
   --border: 1px solid var(--border-color);
+  --border-light: 1px solid var(--border-color-light);
 }
 
 html.dark {
   // Colors
+  --primary: #e7b31f;
+  --primaryAlt: #c69b20;
   --background: #0d0d0d;
   --backgroundAlt: #121212;
   --backgroundAlt2: #1f1f1f;
@@ -29,6 +33,7 @@ html.dark {
   --foregroundAlt: #999999;
   --text-gray: #999;
   --border-color: #747474;
+  --border-color-light: #2e2e2e;
   // RGB Values
   --backgroundRGB: 13, 13, 13;
   --foregroundRGB: 237, 237, 237;
@@ -38,6 +43,7 @@ html.dark {
   --glass-hover: rgba(255, 255, 255, 0.06);
 
   --border: 1px solid var(--border-color);
+  --border-light: 1px solid var(--border-color-light);
 }
 
 // Breakpoints

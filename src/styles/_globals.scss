@@ -41,6 +41,9 @@ body {
 .c-primary {
   color: var(--primary);
 }
+.c-text-alt {
+  color: var(--foregroundAlt);
+}
 .gradient-primary {
   background: linear-gradient(135deg, var(--primary), #da840b);
   -webkit-background-clip: text;

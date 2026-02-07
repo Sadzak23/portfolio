@@ -19,6 +19,6 @@ export const SectionHeader: FC<Props> = ({ title, preHeadline, desc }) => (
   >
     {preHeadline && <p className="pre-headline">{preHeadline}</p>}
     <h2>{title}</h2>
-    {desc && <p className="section-desc">{desc}</p>}
+    {desc && <p className="c-text-alt">{desc}</p>}
   </motion.div>
 );

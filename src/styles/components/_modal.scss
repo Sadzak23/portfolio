@@ -1,0 +1,174 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.modal {
+  &__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  &__container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    z-index: 50;
+    width: 95%;
+    max-width: 50rem;
+    max-height: 90dvh;
+    @include glass-card;
+    display: flex;
+    flex-direction: column;
+    background: var(--backgroundAlt);
+    border-radius: $radius-xl;
+    border-color: rgba(var(--primaryRGB), 0.2);
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  &__close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: $radius-full;
+    background: none;
+    padding: 0.5rem;
+    color: var(--foregroundAlt);
+    transition: all $transition-base;
+    &:hover {
+      background: rgba(var(--primaryRGB), 0.1);
+      color: var(--primary);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: var(--border-light);
+    padding: 1.5rem 1.5rem 1rem;
+    @include sm {
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 2.25rem;
+    color: var(--foreground);
+
+    @include sm {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__subtitle {
+    letter-spacing: 0.3em;
+    font-size: 0.75rem;
+    @include sm {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__body {
+    overflow: auto;
+    flex: 1 1 0%;
+    padding: 1.5rem;
+
+    p {
+      font-size: 0.875rem;
+    }
+    @include sm {
+      padding: 2.5rem;
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    // Custom scrollbar
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      //   background: rgba($charcoal-light, 0.3);
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(var(--primaryRGB), 0.3);
+      border-radius: 3px;
+
+      &:hover {
+        background: rgba(var(--primaryRGB), 0.5);
+      }
+    }
+  }
+  //   &__icon {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     width: 4rem;
+  //     height: 4rem;
+  //     border-radius: $radius-full;
+  //     border: 1px solid rgba(var(--primaryRGB), 0.3);
+  //     background: rgba(var(--primaryRGB), 0.1);
+
+  //     svg {
+  //       width: 2rem;
+  //       height: 2rem;
+  //       color: var(--primary);
+  //     }
+  //   }
+
+  //   &__story {
+  //     margin-bottom: 1.5rem;
+  //     font-size: 1rem;
+  //     line-height: 1.75;
+  //     color: var(--foreground);
+  //   }
+
+  //   &__gallery {
+  //     display: grid;
+  //     grid-template-columns: repeat(3, 1fr);
+  //     gap: 0.75rem;
+  //   }
+
+  //   &__gallery-item {
+  //     aspect-ratio: 1;
+  //     border-radius: $radius-lg;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     border: 1px solid var(--foregroundAlt);
+
+  //     span {
+  //       font-size: 0.75rem;
+  //       color: var(--foregroundAlt);
+  //     }
+  //   }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid rgb(46, 46, 46);
+    border-top: var(--border-light);
+  }
+}

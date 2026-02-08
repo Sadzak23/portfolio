@@ -14,7 +14,7 @@ export const projects: Project[] = [
       "The site you are currently visiting, designed with a focus on high performance and minimalist aesthetics. It is hosted on Vercel to ensure seamless deployment and optimized global delivery.",
     image: "/images/projects/portfolio.jpg",
     techStack: ["Next.js", "TypeScript", "SCSS", "Node.js", "Webpack"],
-    liveUrl: "https://alex.sadzak.net/",
+    liveUrl: "https://alex.sadzak.net",
     sourceUrl: "https://github.com/Sadzak23/portfolio",
   },
   {
@@ -52,7 +52,7 @@ export const projects: Project[] = [
       "I built this game over a weekend for my daughter to play. It features three difficulty levels and four different tile sets to keep it engaging. The entire project was developed from scratch without any external libraries or AI tools, focusing on a clean, responsive design that works perfectly in both dark and light modes.",
     image: "/images/projects/memory-game.jpg",
     techStack: ["React", "TypeScript", "SCSS", "Vite"],
-    liveUrl: "https://memory-game.sadzak.net/",
+    liveUrl: "https://memory-game.sadzak.net",
     sourceUrl: "https://github.com/Sadzak23/memory-game",
   },
   {
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "A logic-heavy project inspired by John Crickett’s coding challenge. It is currently a competitive local 2-player game where I implemented the entire game loop and ball physics using custom mathematical functions. Built without AI or external libraries, with an AI opponent planned for the future.",
     image: "/images/projects/pong.jpg",
     techStack: ["React", "TypeScript", "SCSS", "Vite"],
-    liveUrl: "https://pong-game.sadzak.net/game",
+    liveUrl: "https://pong-game.sadzak.net",
     sourceUrl: "https://github.com/Sadzak23/pong",
   },
   //   {

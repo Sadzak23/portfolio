@@ -53,7 +53,9 @@ $breakpoint-lg: 1024px;
 $breakpoint-xl: 1280px;
 
 // Transitions
+$transition-fast: 150ms ease;
 $transition-base: 300ms ease;
+$transition-slow: 500ms ease;
 
 // Typography
 $font-heading: "Bebas Neue", sans-serif;

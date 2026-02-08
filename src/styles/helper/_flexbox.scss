@@ -7,4 +7,10 @@
     align-items: center;
     justify-content: center;
   }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.grow {
+    flex: 1;
+  }
 }

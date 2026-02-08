@@ -26,7 +26,6 @@ export const AboutStory: FC = () => {
             label="Get to know me"
             icon={ArrowRight}
             onClick={() => setIsOpen(true)}
-            variant="outlined"
             size="s"
           />
         </div>

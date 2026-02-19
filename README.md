@@ -3,6 +3,7 @@
 [![Live Site](https://img.shields.io/badge/Live_Site-alex.sadzak.net-e7b31f?style=for-the-badge)](https://alex.sadzak.net)
 [![Tech](https://img.shields.io/badge/Next.js_16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Style](https://img.shields.io/badge/SCSS-hotpink?style=for-the-badge&logo=sass)](https://sass-lang.com/)
+[![Performance](https://img.shields.io/badge/Lighthouse-100%2F100-success?style=for-the-badge)](https://alex.sadzak.net)
 
 ## 🏃‍♂️ The Pivot: From Athlete to Engineer
 

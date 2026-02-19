@@ -36,7 +36,7 @@ export const story: Story[] = [
         sacrifice, but more importantly, it shaped my character, building a core
         of responsibility, persistence, and respect!`,
     image: {
-      src: "/images/karate/karate-medals.jpg",
+      src: "/images/karate-medals.webp",
       alt: "Karate Medals",
       align: "left",
     },
@@ -72,7 +72,7 @@ export const story: Story[] = [
         demanding accountability, proactivity, and the ability to organize
         complex systems.`,
     image: {
-      src: "/images/tribe/tribe1.jpg",
+      src: "/images/tribe1.webp",
       alt: "Running Tribe",
       align: "left",
     },
@@ -84,11 +84,11 @@ export const story: Story[] = [
         well-being.`,
     images: [
       {
-        src: "/images/tv/rts.jpg",
+        src: "/images/rts.webp",
         alt: "RTS TV Appearance",
       },
       {
-        src: "/images/tv/N1.jpg",
+        src: "/images/n1.webp",
         alt: "N1 TV Appearance",
       },
     ],
@@ -104,17 +104,17 @@ export const story: Story[] = [
         from a necessity to a genuine interest.`,
     images: [
       {
-        src: "/images/guitar/guitar1.jpg",
+        src: "/images/guitar1.webp",
         alt: "Playing Guitar",
         aspectRatio: "square",
       },
       {
-        src: "/images/snowboard/snowboard1.jpg",
+        src: "/images/snowboard1.webp",
         alt: "Snowboarding",
         aspectRatio: "square",
       },
       {
-        src: "/images/tribe/tribe2.jpg",
+        src: "/images/tribe2.webp",
         alt: "Running",
         aspectRatio: "square",
       },
@@ -143,7 +143,7 @@ export const story: Story[] = [
         now bring that same level of championship dedication to building
         scalable, high-performance mobile and web applications.`,
     image: {
-      src: "/images/coding/coding1.jpg",
+      src: "/images/hero.webp",
       alt: "Coding",
       align: "right",
     },

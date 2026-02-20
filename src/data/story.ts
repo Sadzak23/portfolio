@@ -56,7 +56,7 @@ export const story: Story[] = [
         karate, gymnastics, and eventually fitness, learning how to guide others
         toward their goals.`,
     image: {
-      src: "/images/crafting1.jpg",
+      src: "/images/crafting1.webp",
       alt: "Crafting",
       align: "right",
     },
@@ -88,7 +88,7 @@ export const story: Story[] = [
         alt: "RTS TV Appearance",
       },
       {
-        src: "/images/n1.webp",
+        src: "/images/N1.webp",
         alt: "N1 TV Appearance",
       },
     ],
@@ -143,7 +143,7 @@ export const story: Story[] = [
         now bring that same level of championship dedication to building
         scalable, high-performance mobile and web applications.`,
     image: {
-      src: "/images/hero.webp",
+      src: "/images/coding.webp",
       alt: "Coding",
       align: "right",
     },
@@ -158,7 +158,7 @@ export const story: Story[] = [
         building software, I am building solutions that reflect a lifetime of 
         discipline, growth, and the pursuit of excellence.`,
     image: {
-      src: "/images/medals.jpg",
+      src: "/images/medals.webp",
       alt: "Medals & Achievements",
       align: "left",
     },
